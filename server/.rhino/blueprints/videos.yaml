@@ -1,0 +1,60 @@
+model: Video
+slug: videos
+table: videos
+
+options:
+  belongs_to_organization: true
+  soft_deletes: true
+  pagination: true
+  per_page: 25
+
+columns:
+  title:
+    type: string
+    nullable: false
+    searchable: true
+  url:
+    type: string
+    nullable: false
+  duration:
+    type: integer
+    nullable: true
+  post_id:
+    type: foreignId
+    foreign_model: Post
+    index: true
+    nullable: true
+  user_id:
+    type: foreignId
+    foreign_model: User
+    index: true
+
+relationships:
+  - type: belongsTo
+    model: Organization
+  - type: belongsTo
+    model: User
+  - type: belongsTo
+    model: Post
+
+permissions:
+  admin:
+    actions: [index, show, store, update, destroy, trashed, restore, forceDelete]
+    show_fields: "*"
+    create_fields: "*"
+    update_fields: "*"
+  content_team_member:
+    actions: [index, show, store, update, destroy, trashed, restore]
+    show_fields: "*"
+    create_fields:
+      - title
+      - url
+      - duration
+      - post_id
+      - user_id
+    update_fields:
+      - title
+      - url
+      - duration
+      - post_id
+      - user_id

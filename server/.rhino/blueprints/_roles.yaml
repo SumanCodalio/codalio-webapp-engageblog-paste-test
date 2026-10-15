@@ -1,0 +1,7 @@
+roles:
+  admin:
+    name: Admin
+    description: "Full access to manage the application, settings, integrations, and users."
+  content_team_member:
+    name: Content Team Member
+    description: "Access to create, edit, and publish blog posts, upload videos, and view analytics."

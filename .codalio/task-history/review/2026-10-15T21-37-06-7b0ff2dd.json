@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Inventory the suites",
+    "notes": "",
+    "status": "done"
+  },
+  {
+    "title": "Run the backend suite",
+    "notes": "",
+    "status": "done"
+  },
+  {
+    "title": "Check coverage",
+    "notes": "",
+    "status": "done"
+  },
+  {
+    "title": "Map results to criteria",
+    "notes": "",
+    "status": "done"
+  },
+  {
+    "title": "Save the report",
+    "notes": "",
+    "status": "done"
+  }
+]

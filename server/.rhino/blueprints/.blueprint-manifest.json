@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "generated_at": "2026-10-15T11:01:27-04:00",
+  "files": {
+    "analytics_data.yaml": {
+      "content_hash": "b4efbe636c0c446359001e50cdddf66cef90f9d96981ad380bcad35a303b9457",
+      "generated_files": [
+        "app/models/analytics_data.rb",
+        "db/migrate/20261015150008_create_analytics_data.rb",
+        "spec/factories/analytics_data.rb",
+        "app/models/scopes/analytics_data_scope.rb",
+        "app/policies/analytics_data_policy.rb",
+        "spec/models/analytics_data_spec.rb"
+      ],
+      "generated_at": "2026-10-15T11:00:08-04:00"
+    },
+    "videos.yaml": {
+      "content_hash": "435417a08e733e21d1eb40ff9c8e8fc7dc5d6bb27b981a5348745dd3b2fc4d66",
+      "generated_files": [
+        "app/models/video.rb",
+        "db/migrate/20261015150127_create_videos.rb",
+        "spec/factories/videos.rb",
+        "app/models/scopes/video_scope.rb",
+        "app/policies/video_policy.rb",
+        "spec/models/video_spec.rb"
+      ],
+      "generated_at": "2026-10-15T11:01:27-04:00"
+    }
+  }
+}

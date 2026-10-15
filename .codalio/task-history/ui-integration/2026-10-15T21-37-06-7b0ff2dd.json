@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Install styling stack and copy dependencies",
+    "notes": "",
+    "status": "done"
+  },
+  {
+    "title": "Vendor verbatim from design root",
+    "notes": "",
+    "status": "done"
+  },
+  {
+    "title": "Wire page data and hooks",
+    "notes": "",
+    "status": "done"
+  },
+  {
+    "title": "Wire identity and auth slots",
+    "notes": "",
+    "status": "done"
+  },
+  {
+    "title": "Register routes",
+    "notes": "",
+    "status": "done"
+  },
+  {
+    "title": "Scaffold missing screens",
+    "notes": "",
+    "status": "done"
+  },
+  {
+    "title": "Verify diff against user design",
+    "notes": "",
+    "status": "done"
+  },
+  {
+    "title": "Run final build and verification",
+    "notes": "",
+    "status": "done"
+  },
+  {
+    "title": "Run runtime smoke check",
+    "notes": "",
+    "status": "done"
+  }
+]

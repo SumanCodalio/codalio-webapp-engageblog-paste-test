@@ -1,0 +1,12 @@
+Running 13 tests in a single process (parallelization threshold is 50)
+Run options: --seed 55028
+
+# Running:
+
+....After update: {"id" => 19, "organization_id" => 1, "title" => "Vid", "url" => "http://vid.mp4", "duration" => nil, "post_id" => 28, "user_id" => 4}
+...S..SS.
+
+Finished in 1.030707s, 12.6127 runs/s, 59.1827 assertions/s.
+13 runs, 61 assertions, 0 failures, 0 errors, 3 skips
+
+You have skipped tests. Run with --verbose for details.

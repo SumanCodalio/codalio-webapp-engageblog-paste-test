@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Read project files",
+    "notes": "Read acceptance criteria, plan, and PRD.",
+    "status": "done"
+  },
+  {
+    "title": "Analyze acceptance criteria",
+    "notes": "List criteria and map to required tests.",
+    "status": "done"
+  },
+  {
+    "title": "Review existing tests",
+    "notes": "Understand existing tests and factories.",
+    "status": "done"
+  },
+  {
+    "title": "Write feature tests",
+    "notes": "Write missing tests for ACs.",
+    "status": "done"
+  },
+  {
+    "title": "Run test suite",
+    "notes": "Run tests and fix failures.",
+    "status": "done"
+  },
+  {
+    "title": "Update criteria tracking",
+    "notes": "Mark tested criteria in the tracking file.",
+    "status": "done"
+  },
+  {
+    "title": "Verify coverage and run smoke test",
+    "notes": "Check for gaps and run smoke test.",
+    "status": "done"
+  }
+]

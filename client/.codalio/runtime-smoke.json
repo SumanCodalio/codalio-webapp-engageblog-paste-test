@@ -1,0 +1,29 @@
+{
+  "backend_stack": null,
+  "checks": [],
+  "client_stack": null,
+  "command": [
+    "host-http-runtime-smoke"
+  ],
+  "executed_at": "2026-10-15T19:43:58.408749+00:00",
+  "executed_checks": [],
+  "execution_id": "5dd47024-c78d-42f0-b1c4-c80dbd78632c",
+  "failures": [
+    ".codalio/ui-handoff.json is missing"
+  ],
+  "flow": [],
+  "gate": "runtime",
+  "health_path": "/up",
+  "result": {
+    "checks": 0,
+    "failures": 1,
+    "returncode": 1
+  },
+  "rhino_runtime": null,
+  "routes": [],
+  "schema": "codalio.generation-evidence",
+  "source_files": 0,
+  "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": "failed",
+  "version": 1
+}

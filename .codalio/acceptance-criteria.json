@@ -1,0 +1,2911 @@
+{
+  "criteria": [
+    {
+      "id": "AC-1",
+      "name": "Only content_team_member can access /create-post.",
+      "user_story": "Create and Publish Text Post",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/posts/CreatePostPage.tsx",
+        "client/src/routes/custom.jsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-1_to_AC-12:_Create,_view,_edit_and_publish_posts",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-2",
+      "name": "User can enter and format text content using a rich text editor.",
+      "user_story": "Create and Publish Text Post",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/posts/CreatePostPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-1_to_AC-12:_Create,_view,_edit_and_publish_posts",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-3",
+      "name": "User can save a post as a draft.",
+      "user_story": "Create and Publish Text Post",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/posts/CreatePostPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-1_to_AC-12:_Create,_view,_edit_and_publish_posts",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-4",
+      "name": "User can preview the post before publishing.",
+      "user_story": "Create and Publish Text Post",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/posts/CreatePostPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-1_to_AC-12:_Create,_view,_edit_and_publish_posts",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-5",
+      "name": "User can publish the post, making it live.",
+      "user_story": "Create and Publish Text Post",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/posts/CreatePostPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-1_to_AC-12:_Create,_view,_edit_and_publish_posts",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-6",
+      "name": "Published posts are visible on the blog.",
+      "user_story": "Create and Publish Text Post",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/dashboard/LandingPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-1_to_AC-12:_Create,_view,_edit_and_publish_posts",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-7",
+      "name": "The data model stores approved and the application uses it as described in this story.",
+      "user_story": "Create and Publish Text Post",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "bundle exec rails g migration AddFieldsToUsers approved:boolean profile_completed:boolean first_name:string last_name:string"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-1_to_AC-12:_Create,_view,_edit_and_publish_posts",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-8",
+      "name": "The data model stores profile completed and the application uses it as described in this story.",
+      "user_story": "Create and Publish Text Post",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "db/migrate/*_add_fields_to_users.rb"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-1_to_AC-12:_Create,_view,_edit_and_publish_posts",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-9",
+      "name": "Only content_team_member can edit published posts.",
+      "user_story": "Edit Existing Post",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/posts/CreatePostPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-1_to_AC-12:_Create,_view,_edit_and_publish_posts",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-10",
+      "name": "User can select a published post from a list and enter edit mode.",
+      "user_story": "Edit Existing Post",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/dashboard/LandingPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-1_to_AC-12:_Create,_view,_edit_and_publish_posts",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-11",
+      "name": "User can modify text and media within the post.",
+      "user_story": "Edit Existing Post",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/posts/CreatePostPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-1_to_AC-12:_Create,_view,_edit_and_publish_posts",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-12",
+      "name": "User can save changes, which are immediately reflected on the live blog.",
+      "user_story": "Edit Existing Post",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/posts/CreatePostPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-1_to_AC-12:_Create,_view,_edit_and_publish_posts",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-13",
+      "name": "Only content_team_member can access /media-library.",
+      "user_story": "Upload Video Content",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/media/MediaLibraryPage.tsx",
+        "client/src/routes/custom.jsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-13_to_AC-18:_Upload_and_store_videos",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-14",
+      "name": "The app provides an upload UI for video data, accepting MP4, MOV, and AVI formats, and visibly confirms a successful import.",
+      "user_story": "Upload Video Content",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/media/MediaLibraryPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-13_to_AC-18:_Upload_and_store_videos",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-15",
+      "name": "User can add a title and description to the uploaded video.",
+      "user_story": "Upload Video Content",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/media/MediaLibraryPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-13_to_AC-18:_Upload_and_store_videos",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-16",
+      "name": "Uploaded videos are stored in the media library.",
+      "user_story": "Upload Video Content",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/media/MediaLibraryPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-13_to_AC-18:_Upload_and_store_videos",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-17",
+      "name": "The data model stores duration and the application uses it as described in this story.",
+      "user_story": "Upload Video Content",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "bundle exec rails rhino:blueprint"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-13_to_AC-18:_Upload_and_store_videos",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-18",
+      "name": "The data model stores url and the application uses it as described in this story.",
+      "user_story": "Upload Video Content",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "bundle exec rails rhino:blueprint"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-13_to_AC-18:_Upload_and_store_videos",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-19",
+      "name": "Only content_team_member can embed videos.",
+      "user_story": "Embed Video in Post",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/posts/CreatePostPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-19_to_AC-22:_Embed_video_in_post",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-20",
+      "name": "User can select an uploaded video from the media library within the post editor.",
+      "user_story": "Embed Video in Post",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/posts/CreatePostPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-19_to_AC-22:_Embed_video_in_post",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-21",
+      "name": "The selected video is correctly embedded and displayed in the post preview.",
+      "user_story": "Embed Video in Post",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/posts/CreatePostPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-19_to_AC-22:_Embed_video_in_post",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-22",
+      "name": "Embedded videos play correctly on the published blog post.",
+      "user_story": "Embed Video in Post",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/posts/CreatePostPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-19_to_AC-22:_Embed_video_in_post",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-23",
+      "name": "Unauthenticated users are redirected to /login when accessing /admin/dashboard.",
+      "user_story": "Admin Login",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/routes/custom.jsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-23_to_AC-26:_Authentication_and_Login",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-24",
+      "name": "User can enter email and password on the login page.",
+      "user_story": "Admin Login",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/auth/LoginPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-23_to_AC-26:_Authentication_and_Login",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-25",
+      "name": "Successful login redirects admin to /admin/dashboard.",
+      "user_story": "Admin Login",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/auth/LoginPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-23_to_AC-26:_Authentication_and_Login",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-26",
+      "name": "Failed login attempts display an error message.",
+      "user_story": "Admin Login",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/auth/LoginPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-23_to_AC-26:_Authentication_and_Login",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-27",
+      "name": "Only admin can access /admin/users.",
+      "user_story": "Manage Content Team Members",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/admin/AdminUsersPage.tsx",
+        "client/src/routes/custom.jsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-27_to_AC-33,_AC-60:_Manage_users",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-28",
+      "name": "Admin can view a list of existing content_team_member accounts.",
+      "user_story": "Manage Content Team Members",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/admin/AdminUsersPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-27_to_AC-33,_AC-60:_Manage_users",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-29",
+      "name": "Admin can create a new content_team_member account with a name, email, and password.",
+      "user_story": "Manage Content Team Members",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/admin/AdminUsersPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-27_to_AC-33,_AC-60:_Manage_users",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-30",
+      "name": "Admin can edit an existing content_team_member's details.",
+      "user_story": "Manage Content Team Members",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/admin/AdminUsersPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-27_to_AC-33,_AC-60:_Manage_users",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-31",
+      "name": "Admin can deactivate or delete a content_team_member account.",
+      "user_story": "Manage Content Team Members",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/admin/AdminUsersPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-27_to_AC-33,_AC-60:_Manage_users",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-32",
+      "name": "The data model stores first name and the application uses it as described in this story.",
+      "user_story": "Manage Content Team Members",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "db/migrate/*_add_fields_to_users.rb"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-27_to_AC-33,_AC-60:_Manage_users",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-33",
+      "name": "The data model stores last name and the application uses it as described in this story.",
+      "user_story": "Manage Content Team Members",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "db/migrate/*_add_fields_to_users.rb"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-27_to_AC-33,_AC-60:_Manage_users",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-34",
+      "name": "User can click a logout button.",
+      "user_story": "User Logout",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/layout/AppLayout.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-34_to_AC-36:_Logout_functionality",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-35",
+      "name": "Successful logout redirects the user to /login.",
+      "user_story": "User Logout",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/layout/AppLayout.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-34_to_AC-36:_Logout_functionality",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-36",
+      "name": "After logout, the user cannot access protected routes without re-authenticating.",
+      "user_story": "User Logout",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/layout/AppLayout.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-34_to_AC-36:_Logout_functionality",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-37",
+      "name": "Only content_team_member can access /analytics.",
+      "user_story": "View Content Performance Metrics",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/analytics/AnalyticsPage.tsx",
+        "client/src/routes/custom.jsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-37_to_AC-45:_Analytics_access_and_filtering",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-38",
+      "name": "Dashboard displays total views, unique visitors, and engagement rate for all content.",
+      "user_story": "View Content Performance Metrics",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/analytics/AnalyticsPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-37_to_AC-45:_Analytics_access_and_filtering",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-39",
+      "name": "Metrics are presented in an easy-to-understand visual format (e.g., charts, graphs).",
+      "user_story": "View Content Performance Metrics",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/analytics/AnalyticsPage.tsx",
+        "npm i recharts"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-37_to_AC-45:_Analytics_access_and_filtering",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-40",
+      "name": "User can see performance metrics for individual posts.",
+      "user_story": "View Content Performance Metrics",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/analytics/AnalyticsPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-37_to_AC-45:_Analytics_access_and_filtering",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-41",
+      "name": "Only content_team_member can filter analytics data.",
+      "user_story": "Filter Analytics Data",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/analytics/AnalyticsPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-37_to_AC-45:_Analytics_access_and_filtering",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-42",
+      "name": "User can select a custom date range to view data.",
+      "user_story": "Filter Analytics Data",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/analytics/AnalyticsPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-37_to_AC-45:_Analytics_access_and_filtering",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-43",
+      "name": "User can filter data to show only video posts or text posts.",
+      "user_story": "Filter Analytics Data",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/analytics/AnalyticsPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-37_to_AC-45:_Analytics_access_and_filtering",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-44",
+      "name": "Filtered data updates the dashboard in real-time.",
+      "user_story": "Filter Analytics Data",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/analytics/AnalyticsPage.tsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-37_to_AC-45:_Analytics_access_and_filtering",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-45",
+      "name": "The data model stores event type and the application uses it as described in this story.",
+      "user_story": "Filter Analytics Data",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "bundle exec rails rhino:blueprint"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-37_to_AC-45:_Analytics_access_and_filtering",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-46",
+      "name": "Only admin can access /admin/integrations.",
+      "user_story": "Connect to Marketing Tools",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/admin/AdminApiIntegrationsPage.tsx",
+        "client/src/routes/custom.jsx"
+      ],
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-47",
+      "name": "Admin can view a list of available marketing tool integrations (e.g., Mailchimp, HubSpot).",
+      "user_story": "Connect to Marketing Tools",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/admin/AdminApiIntegrationsPage.tsx"
+      ],
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-48",
+      "name": "Admin can configure API keys or authentication tokens for selected integrations.",
+      "user_story": "Connect to Marketing Tools",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/admin/AdminApiIntegrationsPage.tsx"
+      ],
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-49",
+      "name": "Successful integration is confirmed with a status indicator.",
+      "user_story": "Connect to Marketing Tools",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/admin/AdminApiIntegrationsPage.tsx"
+      ],
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-50",
+      "name": "System generates alerts for critical errors (e.g., server downtime, database connection issues).",
+      "user_story": "System Health Monitoring",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/admin/AdminSystemReportsPage.tsx"
+      ],
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-51",
+      "name": "System logs application performance metrics (e.g., response times, resource utilization).",
+      "user_story": "System Health Monitoring",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/admin/AdminSystemReportsPage.tsx"
+      ],
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-52",
+      "name": "Monitoring data is accessible to admin via a dedicated dashboard (e.g., /admin/monitoring).",
+      "user_story": "System Health Monitoring",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/admin/AdminSystemReportsPage.tsx",
+        "client/src/routes/custom.jsx"
+      ],
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-53",
+      "name": "System performs automated daily backups of all application data.",
+      "user_story": "Data Backup and Restore",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "config/schedule.rb"
+      ],
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-54",
+      "name": "Backup files are stored securely and redundantly.",
+      "user_story": "Data Backup and Restore",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "config/schedule.rb"
+      ],
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-55",
+      "name": "admin can initiate a data restore process from a recent backup.",
+      "user_story": "Data Backup and Restore",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/components/admin/AdminSystemSettingsPage.tsx"
+      ],
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-56",
+      "name": "content_team_member cannot access /admin routes.",
+      "user_story": "Role-Based Access Control",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/routes/custom.jsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-56_to_AC-58:_RBAC",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-57",
+      "name": "admin has full access to all application features and data.",
+      "user_story": "Role-Based Access Control",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "server/.rhino/blueprints/_roles.yaml"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-56_to_AC-58:_RBAC",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-58",
+      "name": "Unauthorized access attempts are logged and blocked.",
+      "user_story": "Role-Based Access Control",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "client/src/routes/custom.jsx"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-56_to_AC-58:_RBAC",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-59",
+      "name": "Extra: Dashboard metrics endpoint for aggregated data",
+      "user_story": "Custom endpoint",
+      "phase": "Phase 2: Analytics & Integrations",
+      "status": "broken",
+      "subtasks": [
+        "app/controllers/api/dashboard_controller.rb"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-59:_Dashboard_stats_endpoint",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-60",
+      "name": "Extra: Ensure Users table has correct fields (first_name, last_name, approved, profile_completed)",
+      "user_story": "Data Model Update",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "bundle exec rails g migration AddFieldsToUsers approved:boolean profile_completed:boolean first_name:string last_name:string"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-27_to_AC-33,_AC-60:_Manage_users",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    },
+    {
+      "id": "AC-61",
+      "name": "Extra: Create sample roles and UsersRole in seeds",
+      "user_story": "Data Seeding",
+      "phase": "Phase 1: Minimum Viable Product (MVP)",
+      "status": "broken",
+      "subtasks": [
+        "db/seeds.rb"
+      ],
+      "test_name": "test/integration/acceptance_criteria_test.rb#test_AC-61:_Data_Seeding_provides_roles_and_sample_users",
+      "gate_evidence": [
+        {
+          "gate": "backend",
+          "status": "missing",
+          "artifact": ".codalio/backend-gate.json",
+          "failures": [
+            "required backend gate result is missing"
+          ]
+        },
+        {
+          "gate": "frontend",
+          "status": "missing",
+          "artifact": ".codalio/frontend-gate.json",
+          "failures": [
+            "required frontend gate result is missing"
+          ]
+        },
+        {
+          "gate": "runtime",
+          "status": "missing",
+          "artifact": ".codalio/runtime-smoke.json",
+          "failures": [
+            "required runtime gate result is missing"
+          ]
+        },
+        {
+          "gate": "system",
+          "status": "failed",
+          "artifact": "host-owned review evidence seal",
+          "failures": [
+            "system-owned generation artifacts changed during review",
+            "generated application source changed during review"
+          ]
+        }
+      ],
+      "notes": "backend gate missing: required backend gate result is missing\nfrontend gate missing: required frontend gate result is missing\nruntime gate missing: required runtime gate result is missing\nsystem gate failed: system-owned generation artifacts changed during review; generated application source changed during review"
+    }
+  ],
+  "updated_at": "2026-10-15T22:02:54.614728+00:00",
+  "compliance": {
+    "implemented": 0,
+    "partial": 0,
+    "missing": 61,
+    "total": 61,
+    "score": 0.0,
+    "gates": [
+      {
+        "name": "backend",
+        "status": "missing",
+        "artifact": ".codalio/backend-gate.json",
+        "failures": [
+          "required backend gate result is missing"
+        ]
+      },
+      {
+        "name": "frontend",
+        "status": "missing",
+        "artifact": ".codalio/frontend-gate.json",
+        "failures": [
+          "required frontend gate result is missing"
+        ]
+      },
+      {
+        "name": "runtime",
+        "status": "missing",
+        "artifact": ".codalio/runtime-smoke.json",
+        "failures": [
+          "required runtime gate result is missing"
+        ]
+      },
+      {
+        "name": "system",
+        "status": "failed",
+        "artifact": "host-owned review evidence seal",
+        "failures": [
+          "system-owned generation artifacts changed during review",
+          "generated application source changed during review"
+        ]
+      }
+    ]
+  }
+}

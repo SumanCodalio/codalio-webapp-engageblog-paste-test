@@ -1,0 +1,49 @@
+{
+  "summary": {
+    "gap_count": 0
+  },
+  "gaps": [],
+  "role_registry": [
+    "admin",
+    "content_team_member"
+  ],
+  "coverage_matrix": [
+    {
+      "key_feature": "Analytics Dashboard",
+      "sitemap_paths": ["/analytics"],
+      "story_ids": ["View Content Performance Metrics", "Filter Analytics Data"]
+    },
+    {
+      "key_feature": "Video Content Support",
+      "sitemap_paths": ["/media-library", "/create-post"],
+      "story_ids": ["Upload Video Content", "Embed Video in Post"]
+    },
+    {
+      "key_feature": "Content Publishing Tools",
+      "sitemap_paths": ["/create-post", "/"],
+      "story_ids": ["Create and Publish Text Post", "Edit Existing Post"]
+    },
+    {
+      "key_feature": "User Management",
+      "sitemap_paths": ["/admin/users", "/login"],
+      "story_ids": ["Admin Login", "Manage Content Team Members", "User Logout"]
+    },
+    {
+      "key_feature": "API Integrations",
+      "sitemap_paths": ["/admin/api-integrations"],
+      "story_ids": ["Connect to Marketing Tools"]
+    },
+    {
+      "key_feature": "Scalability & Security",
+      "sitemap_paths": ["/admin/system-settings"],
+      "story_ids": ["Data Backup and Restore", "Role-Based Access Control"]
+    },
+    {
+      "key_feature": "Monitoring & Reporting",
+      "sitemap_paths": ["/admin/system-reports"],
+      "story_ids": ["System Health Monitoring"]
+    }
+  ],
+  "hints_for_planner": [],
+  "updated_at": "2026-10-15T14:24:00Z"
+}

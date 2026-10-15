@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Phase 0 \u2014 PRD integrity audit",
+    "notes": "",
+    "status": "done"
+  },
+  {
+    "title": "Design permissions and write _roles.yaml",
+    "notes": "",
+    "status": "done"
+  },
+  {
+    "title": "Design the data model and write blueprints",
+    "notes": "",
+    "status": "done"
+  },
+  {
+    "title": "Identify Screens and write ui-handoff.json (if applicable)",
+    "notes": "",
+    "status": "done"
+  },
+  {
+    "title": "Write .rhino-plan.md and acceptance criteria",
+    "notes": "",
+    "status": "done"
+  },
+  {
+    "title": "Write .codalio/index.json",
+    "notes": "",
+    "status": "done"
+  }
+]

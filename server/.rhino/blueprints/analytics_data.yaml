@@ -1,0 +1,43 @@
+model: AnalyticsData
+slug: analytics_data
+table: analytics_data
+
+options:
+  belongs_to_organization: true
+  pagination: true
+  per_page: 50
+
+columns:
+  event_type:
+    type: string
+    nullable: false
+    filterable: true
+  event_data:
+    type: json
+    nullable: true
+  recorded_at:
+    type: datetime
+    nullable: false
+    sortable: true
+  post_id:
+    type: foreignId
+    foreign_model: Post
+    index: true
+
+relationships:
+  - type: belongsTo
+    model: Organization
+  - type: belongsTo
+    model: Post
+
+permissions:
+  admin:
+    actions: [index, show]
+    show_fields: "*"
+    create_fields: []
+    update_fields: []
+  content_team_member:
+    actions: [index, show]
+    show_fields: "*"
+    create_fields: []
+    update_fields: []

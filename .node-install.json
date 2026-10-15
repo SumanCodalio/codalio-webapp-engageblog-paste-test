@@ -1,0 +1,11 @@
+{
+  "status": "ok",
+  "stamp": "20.14.0-Linux-aarch64",
+  "installed_at": "2026-10-15T21:38:21.059188+00:00",
+  "log_path": "/root/codalio/Codalio Projects/openhands-orchestrator/projects/1/317/logs/setup-npm.log",
+  "runtime": {
+    "version": "20.14.0",
+    "bin_dir": "/root/.nvm/versions/node/v20.14.0/bin",
+    "source": "system"
+  }
+}
