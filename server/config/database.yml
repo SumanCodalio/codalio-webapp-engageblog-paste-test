@@ -57,6 +57,7 @@ development:
 test:
   <<: *default
   database: rhino_317_test
+  url: postgresql://postgres:postgres@localhost/rhino_317_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is

@@ -14,7 +14,7 @@ class User < Rhino::RhinoModel
   validates :name, presence: true
   validates :email, presence: true, uniqueness: true
 
-  rhino_additional_hidden :api_token
+  rhino_additional_hidden :api_token, :invitation_token
   rhino_audit_exclude :api_token, :password_digest
   
   rhino_filters :email, :approved, :profile_completed

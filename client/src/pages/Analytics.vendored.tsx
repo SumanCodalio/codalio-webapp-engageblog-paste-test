@@ -60,7 +60,7 @@ export default function AnalyticsVendored({ leaderboardData, metricsData, isLoad
   const leaderboard = leaderboardData || [];
 
   const filteredLeaderboard = leaderboard.filter(
-    (item) =>
+    (item: any) =>
       item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       item.category.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -125,9 +125,9 @@ export default function AnalyticsVendored({ leaderboardData, metricsData, isLoad
               key={card.label}
               label={card.label}
               value={card.value}
-              change={card.change}
+              change={card.trend}
               trend="up"
-              description={card.detail}
+              description={card.trend}
               icon={<card.icon className="h-5 w-5" />}
             />
           ))}
@@ -313,7 +313,7 @@ export default function AnalyticsVendored({ leaderboardData, metricsData, isLoad
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {filteredLeaderboard.map((item, index) => (
+                {filteredLeaderboard.map((item: any, index: any) => (
                   <TableRow key={item.id} className="hover:bg-muted/30">
                     <TableCell className="text-center font-bold text-xs">
                       {index === 0 && <span className="inline-block w-5 h-5 rounded-full bg-amber-500/20 text-amber-600 dark:text-amber-400 leading-5">1</span>}

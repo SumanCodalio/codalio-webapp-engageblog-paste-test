@@ -18,9 +18,6 @@ content_member_role = Role.find_or_create_by!(slug: 'content_team_member') do |r
   r.name = 'Content Team Member'
 end
 
-# The instructions ask for a read-only role 'viewer@example.com'.
-# But PRD has only admin and content_team_member. We can use content_team_member or create viewer.
-# We'll just create viewer role as well to satisfy the contract exactly.
 viewer_role = Role.find_or_create_by!(slug: 'viewer') do |r|
   r.name = 'Viewer'
 end
@@ -52,7 +49,9 @@ def create_user(email, first_name)
   user.name = first_name
   user.first_name = first_name
   if user.new_record? || user.password_digest.blank?
-    user.password = 'password'
+    seed_password = ENV["SEED_PASSWORD"] || ("password" unless Rails.env.production?)
+    raise "SEED_PASSWORD is required in production" unless seed_password
+    user.password = seed_password
   end
   user.save!
   user
@@ -99,13 +98,13 @@ Video.find_or_create_by!(organization: other_org, url: 'https://example.com/othe
 end
 
 # AnalyticsData
-AnalyticsData.find_or_create_by!(organization: demo_org, event_type: 'view', recorded_at: Time.current.beginning_of_day) do |a|
-  a.post = post1
+AnalyticsData.find_or_create_by!(organization: demo_org, event_type: 'view', post: post1) do |a|
+  a.recorded_at = Time.current.beginning_of_day
   a.event_data = { user_agent: 'Firefox' }
 end
 
-AnalyticsData.find_or_create_by!(organization: demo_org, event_type: 'complete', recorded_at: Time.current.beginning_of_day) do |a|
-  a.post = post1
+AnalyticsData.find_or_create_by!(organization: demo_org, event_type: 'complete', post: post1) do |a|
+  a.recorded_at = Time.current.beginning_of_day
   a.event_data = { user_agent: 'Firefox' }
 end
 
@@ -113,20 +112,25 @@ sarah = User.find_or_initialize_by(email: "sarah.chen@contentreach.io")
 sarah.name = "Sarah Chen"
 sarah.first_name = "Sarah"
 sarah.last_name = "Chen"
-sarah.password = "password123" if sarah.new_record? || sarah.password_digest.blank?
+if sarah.new_record? || sarah.password_digest.blank?
+  seed_password = ENV["SEED_PASSWORD"] || ("password" unless Rails.env.production?)
+  raise "SEED_PASSWORD is required in production" unless seed_password
+  sarah.password = seed_password
+end
 sarah.save!
 
 alex = User.find_or_initialize_by(email: "alex.thorne@contentreach.io")
 alex.name = "Alex Thorne"
 alex.first_name = "Alex"
 alex.last_name = "Thorne"
-alex.password = "password123" if alex.new_record? || alex.password_digest.blank?
+if alex.new_record? || alex.password_digest.blank?
+  seed_password = ENV["SEED_PASSWORD"] || ("password" unless Rails.env.production?)
+  raise "SEED_PASSWORD is required in production" unless seed_password
+  alex.password = seed_password
+end
 alex.save!
 
-content_team_member = Role.find_by!(name: 'Content Team Member')
-admin = Role.find_by!(name: 'Admin')
+demo_org_again = Organization.find_by!(slug: 'demo-org')
 
-demo_org = Organization.first
-
-UserRole.find_or_create_by!(user: sarah, organization: demo_org, role: content_team_member)
-UserRole.find_or_create_by!(user: alex, organization: demo_org, role: admin)
+UserRole.find_or_create_by!(user: sarah, organization: demo_org_again, role: content_member_role)
+UserRole.find_or_create_by!(user: alex, organization: demo_org_again, role: admin_role)

@@ -55,7 +55,7 @@ import { Progress } from "./ui/progress";
     >
     {isMuted ? <VolumeX className="h-4 w-4 text-rose-400" /> : <Volume2 className="h-4 w-4" />}
     </Button>
-    <span className="font-mono text-[11px] text-white/80">01:42 / {duration}</span>
+    <span className="font-mono text-[11px] text-white/80">{duration}</span>
     </div>
 
     <div className="flex items-center gap-2">
@@ -96,7 +96,7 @@ import { Progress } from "./ui/progress";
     <div className="flex items-center justify-between border-t border-border pt-4 text-sm">
     <div className="flex items-center gap-2 text-muted-foreground text-xs">
     <Sparkles className="h-4 w-4 text-primary" />
-    <span>AI summaries & auto-chapters generated</span>
+    <span>Video ready</span>
     </div>
     <div className="flex items-center gap-2">
     <Button variant="outline" size="sm" onClick={() => onOpenChange(false)}>

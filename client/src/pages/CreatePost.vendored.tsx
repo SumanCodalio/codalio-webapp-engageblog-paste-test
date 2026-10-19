@@ -52,11 +52,11 @@ export default function CreatePostVendored({ isSaving, isPublishing, onSaveDraft
     const [embedUrl, setEmbedUrl] = useState("")
     const [isUploading, setIsUploading] = useState(false)
     const [uploadProgress, setUploadProgress] = useState(0)
-    const handleTitleChange = (val) => {
+    const handleTitleChange = (val: any) => {
       setTitle(val)
       setSlug(val.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, ""))
     }
-    const handleAddTag = (e) => {
+    const handleAddTag = (e: any) => {
       if (e.key === "Enter" && newTag.trim()) {
         e.preventDefault()
         if (!tags.includes(newTag.trim())) {
@@ -65,7 +65,7 @@ export default function CreatePostVendored({ isSaving, isPublishing, onSaveDraft
         setNewTag("")
       }
     }
-    const handleRemoveTag = (tagToRemove) => {
+    const handleRemoveTag = (tagToRemove: any) => {
       setTags(tags.filter((t) => t !== tagToRemove))
     }
     const handleSimulateUpload = () => {

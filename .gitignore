@@ -1,3 +1,16 @@
+# Scratch files
+patch_*.py
+fix_*.py
+*.log
+build_out.txt
+test_discard.rb
+test_scope.rb
+run_installer.rb
+generate_report.py
+generate_ac.py
+test_app_run.py
+server/config/master.key
+
 # OpenHands / Codalio orchestrator metadata — do not push
 /.rhino-history
 /.rhino-plan.md

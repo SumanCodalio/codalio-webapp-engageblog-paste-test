@@ -23,11 +23,11 @@ export default function MediaLibraryVendored({ assets, isLoading, onDeleteAsset,
     const [selectedAsset, setSelectedAsset] = useState<any>(localAssets[0] || null)
     const [isPlayerOpen, setIsPlayerOpen] = useState(false)
     const [copied, setCopied] = useState(false)
-    const handleCopyUrl = (url) => {
+    const handleCopyUrl = (url: any) => {
       setCopied(true)
       window.setTimeout(() => setCopied(false), 2000)
     }
-    const handlePlayModal = (asset) => {
+    const handlePlayModal = (asset: any) => {
       setSelectedAsset(asset)
       setIsPlayerOpen(true)
     }
@@ -130,7 +130,7 @@ export default function MediaLibraryVendored({ assets, isLoading, onDeleteAsset,
       {/* Media Items Grid */}
       <div className="flex-1">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      {localAssets.map((asset) => {
+      {localAssets.map((asset: any) => {
       const isSelected = selectedAsset.id === asset.id
       return (
       <Card

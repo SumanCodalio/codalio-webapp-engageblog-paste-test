@@ -48,7 +48,7 @@ export default function LandingVendored({ posts, metrics, isLoading, onDeletePos
   const [selectedPostIds, setSelectedPostIds] = useState<string[]>([]);
   const localPosts = posts || [];
 
-  const filteredPosts = localPosts.filter((post) => {
+  const filteredPosts = localPosts.filter((post: any) => {
     const matchesSearch =
       post.title.toLowerCase().includes(searchFilter.toLowerCase()) ||
       post.category.toLowerCase().includes(searchFilter.toLowerCase());
@@ -71,7 +71,7 @@ export default function LandingVendored({ posts, metrics, isLoading, onDeletePos
     if (selectedPostIds.length === filteredPosts.length) {
       setSelectedPostIds([]);
     } else {
-      setSelectedPostIds(filteredPosts.map((p) => p.id));
+      setSelectedPostIds(filteredPosts.map((p: any) => p.id));
     }
   };
 
@@ -151,7 +151,7 @@ export default function LandingVendored({ posts, metrics, isLoading, onDeletePos
         </Card>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {localMetrics.map((metric) => (
+          {localMetrics.map((metric: any) => (
             <div
               key={metric.label}
               onClick={() => setSelectedMetric(metric.label)}
@@ -266,7 +266,7 @@ export default function LandingVendored({ posts, metrics, isLoading, onDeletePos
                     </TableCell>
                   </TableRow>
                 ) : (
-                  filteredPosts.map((post) => (
+                  filteredPosts.map((post: any) => (
                     <TableRow key={post.id} className="hover:bg-muted/30">
                       <TableCell className="text-center">
                         <Checkbox

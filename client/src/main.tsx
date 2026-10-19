@@ -36,6 +36,16 @@ try {
 } catch (e) {
   const el = document.getElementById("root");
   if (el) {
-    el.innerHTML = `<div style="padding: 20px; color: red;"><h1>Failed to start app</h1><pre>${e instanceof Error ? e.message : String(e)}</pre></div>`;
+    el.innerHTML = "";
+    const container = document.createElement("div");
+    container.style.padding = "20px";
+    container.style.color = "red";
+    const header = document.createElement("h1");
+    header.textContent = "Failed to start app";
+    const pre = document.createElement("pre");
+    pre.textContent = e instanceof Error ? e.message : String(e);
+    container.appendChild(header);
+    container.appendChild(pre);
+    el.appendChild(container);
   }
 }

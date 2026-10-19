@@ -24,18 +24,18 @@ export default function AdminUsersVendored({ users, isLoading, onInviteUser, onD
     const [inviteName, setInviteName] = useState("")
     const [inviteEmail, setInviteEmail] = useState("")
     const [inviteRole, setInviteRole] = useState("Editor")
-    const handleSendInvite = () => { onInviteUser(inviteEmail); setIsInviteModalOpen(false); }
+    const handleSendInvite = () => { onInviteUser(inviteEmail);  }
     const localUsers = users || []
-    const handleToggleStatus = (id) => {
+    const handleToggleStatus = (id: any) => {
       setUsers(
-        localUsers.map((u) =>
+        localUsers.map((u: any) =>
           u.id === id ? { ...u, status: u.status === "Active" ? "Inactive" : "Active" } : u
         )
       )
     }
-    const handleToggleRole = (id) => {
+    const handleToggleRole = (id: any) => {
       setUsers(
-        localUsers.map((u) => {
+        localUsers.map((u: any) => {
           if (u.id !== id) return u
           const nextRole =
             u.role === "Contributor"
@@ -98,7 +98,7 @@ export default function AdminUsersVendored({ users, isLoading, onInviteUser, onD
         contributor: false,
       },
     ])
-    const handleToggle = (index, role) => {
+    const handleToggle = (index: any, role: any) => {
       setPermissions(
         permissions.map((p, i) =>
           i === index ? { ...p, [role]: !p[role] } : p
@@ -237,7 +237,7 @@ export default function AdminUsersVendored({ users, isLoading, onInviteUser, onD
       </TableRow>
       </TableHeader>
       <TableBody>
-      {localUsers.map((user) => (
+      {localUsers.map((user: any) => (
       <TableRow key={user.id} className="hover:bg-muted/30">
       <TableCell>
       <div className="flex items-center gap-3">

@@ -1,4 +1,4 @@
-// @ts-nocheck
+
 import React from "react";
 import { Alert, AlertDescription } from "../components/ui/alert";
 import { Badge } from "../components/ui/badge";
@@ -15,22 +15,13 @@ import { useAuth } from "@rhino-dev/rhino-react";
 
 export default function Login() {
     const navigate = useNavigate()
-    const [email, setEmail] = useState("sarah.chen@contentreach.io")
-    const [password, setPassword] = useState("password123")
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
     const [showPassword, setShowPassword] = useState(false)
     const [rememberMe, setRememberMe] = useState(true)
-    const [selectedPersona, setSelectedPersona] = useState("manager")
     const [isLoading, setIsLoading] = useState(false)
     const [successMessage, setSuccessMessage] = useState("")
-    const handleSelectPersona = (persona) => {
-      setSelectedPersona(persona)
-      if (persona === "manager") {
-        setEmail("sarah.chen@contentreach.io")
-      } else {
-        setEmail("alex.thorne@contentreach.io")
-      }
-    }
-        const { login, setOrganization } = useAuth()
+    const { login, setOrganization } = useAuth()
     const [errorMsg, setErrorMsg] = useState("")
     
     const handleSubmit = async (e: React.FormEvent) => {
@@ -63,47 +54,8 @@ export default function Login() {
       </div>
       <h1 className="text-2xl font-bold tracking-tight text-foreground">Sign In to ContentReach</h1>
       <p className="text-xs sm:text-sm text-muted-foreground">
-      Select a demo persona or enter your credentials to explore the publishing console.
+      Enter your credentials to explore the publishing console.
       </p>
-      </div>
-
-      <div className="space-y-2">
-      <Label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
-      Quick Demo Personas
-      </Label>
-      <div className="grid grid-cols-2 gap-2">
-      <button
-      type="button"
-      onClick={() => handleSelectPersona("manager")}
-      className={`p-2.5 text-left rounded-xl border transition-all text-xs flex flex-col justify-between ${
-      selectedPersona === "manager"
-      ? "border-primary bg-primary/10 text-primary shadow-xs"
-      : "border-border hover:bg-muted/60 text-foreground"
-      }`}
-      >
-      <div className="flex items-center justify-between w-full">
-      <span className="font-semibold">Sarah Chen</span>
-      {selectedPersona === "manager" && <Check className="h-3.5 w-3.5 text-primary" />}
-      </div>
-      <span className="text-[11px] text-muted-foreground">Content Manager</span>
-      </button>
-
-      <button
-      type="button"
-      onClick={() => handleSelectPersona("admin")}
-      className={`p-2.5 text-left rounded-xl border transition-all text-xs flex flex-col justify-between ${
-      selectedPersona === "admin"
-      ? "border-primary bg-primary/10 text-primary shadow-xs"
-      : "border-border hover:bg-muted/60 text-foreground"
-      }`}
-      >
-      <div className="flex items-center justify-between w-full">
-      <span className="font-semibold">Alex Thorne</span>
-      {selectedPersona === "admin" && <Check className="h-3.5 w-3.5 text-primary" />}
-      </div>
-      <span className="text-[11px] text-muted-foreground">System Admin</span>
-      </button>
-      </div>
       </div>
 
       {errorMsg ? (
@@ -185,7 +137,7 @@ export default function Login() {
       disabled={isLoading}
       className="w-full h-10 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold flex items-center justify-center gap-2 mt-2"
       >
-      <span>{isLoading ? "Authenticating..." : `Sign In as ${selectedPersona === "admin" ? "Alex (Admin)" : "Sarah (Editor)"}`}</span>
+      <span>{isLoading ? "Authenticating..." : "Sign In"}</span>
       <ArrowRight className="h-4 w-4" />
       </Button>
       </form>

@@ -14,7 +14,7 @@ export default function Landing() {
   
   const { data: metricsRes, isLoading: loadingMetrics } = useQuery({
     queryKey: ['dashboard', orgSlug],
-    queryFn: () => api.get(`/api/${orgSlug}/dashboard`).then(res => res.data),
+    queryFn: () => api.get(`/${orgSlug}/dashboard/stats`).then(res => res.data),
     enabled: !!orgSlug
   });
 
@@ -39,9 +39,9 @@ export default function Landing() {
   }));
 
   const adaptedMetrics = [
-    { label: "Total Content Reach", value: metricsRes?.total_views || "0", trend: "+12.5%", isPositive: true },
-    { label: "Published Videos", value: metricsRes?.total_videos || "0", trend: "+3", isPositive: true },
-    { label: "Engagement Rate", value: "4.8%", trend: "+0.6%", isPositive: true },
+    { label: "Total Content Reach", value: metricsRes?.total_content_reach || "0", trend: "+12.5%", isPositive: true },
+    { label: "Video Watch Hours", value: metricsRes?.video_watch_hours || "0", trend: "+3", isPositive: true },
+    { label: "Avg Read Completion", value: metricsRes?.avg_read_completion || "0%", trend: "+0.6%", isPositive: true },
     { label: "Drafts Pending", value: "8", trend: "-2", isPositive: false }
   ];
 

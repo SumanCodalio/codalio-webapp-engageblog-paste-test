@@ -1,15 +1,22 @@
-class Api::DashboardController < ApplicationController
+class Api::DashboardController < Rhino::ResourcesController
+  skip_before_action :set_model_class, :set_model, :authorize_action, raise: false
+
   def stats
-    # Check permissions on analytics and videos
-    user = Rhino.context.user || User.find_by(api_token: request.headers['Authorization']&.split(' ')&.last)
+    user = current_user
+    org = Rhino.context.organization
+
     unless user
       render json: { message: "Unauthenticated." }, status: :unauthorized
       return
     end
-    
-    org = Organization.find_by(slug: params[:organization])
+
     unless org
       render json: { message: "Organization not found" }, status: :not_found
+      return
+    end
+
+    unless user.has_permission?('analytics_data.index', org)
+      render json: { message: "Not found" }, status: :not_found
       return
     end
 
@@ -18,7 +25,6 @@ class Api::DashboardController < ApplicationController
       videos = Rhino.query(Video)
       posts = Rhino.query(Post)
 
-      # Simplified stats as per PRD for Landing Page
       total_reach = analytics.where(event_type: 'view').count
       
       watch_seconds = videos.sum(:duration) || 0
@@ -35,6 +41,4 @@ class Api::DashboardController < ApplicationController
       }
     end
   end
-
-  private
 end

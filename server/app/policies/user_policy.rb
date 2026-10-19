@@ -29,7 +29,7 @@ class UserPolicy < Rhino::ResourcePolicy
   end
 
   def update?
-    super || (auth_owner && record.id == auth_owner.id) || has_role?(user, 'admin')
+    super || (user && record.id == user.id) || has_role?(user, 'admin')
   end
 
   def create?
