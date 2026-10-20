@@ -313,7 +313,7 @@ export default function MediaLibraryVendored({ assets, isLoading, onDeleteAsset,
       onOpenChange={setIsPlayerOpen}
       title={selectedAsset.title}
       duration={selectedAsset.duration || "04:12"}
-      description="Rendered using ContentReach low-latency edge CDN with adaptive multi-bitrate streams."
+      description="Rendered using engageblog testing deployment low-latency edge CDN with adaptive multi-bitrate streams."
       />
       </div>
       </div>

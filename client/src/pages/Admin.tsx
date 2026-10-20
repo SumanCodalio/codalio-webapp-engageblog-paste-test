@@ -64,7 +64,7 @@ export default function Admin() {
       </div>
 
       <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
-      ContentReach Administration
+      engageblog testing deployment Administration
       </h1>
 
       <p className="text-sm text-white/80 leading-relaxed">
@@ -72,7 +72,7 @@ export default function Admin() {
       </p>
 
       <div className="flex items-center gap-4 text-xs text-white/70 pt-1">
-      <span>Organization: <strong className="text-white">ContentReach Enterprise</strong></span>
+      <span>Organization: <strong className="text-white">engageblog testing deployment Enterprise</strong></span>
       <span>•</span>
       <span>Plan: <strong className="text-indigo-300">Enterprise Scale (50TB CDN)</strong></span>
       </div>

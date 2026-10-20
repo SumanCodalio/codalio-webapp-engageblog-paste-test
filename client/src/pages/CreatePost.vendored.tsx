@@ -523,7 +523,7 @@ export default function CreatePostVendored({ isSaving, isPublishing, onSaveDraft
 
       <div className="pt-4 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
       <p className="text-xs text-muted-foreground">
-      Canonical URL: <span className="font-mono text-foreground">https://blog.contentreach.io/architecting-distributed-video-blogs</span>
+      Canonical URL: <span className="font-mono text-foreground">https://blog.engageblog-testing-deployment.io/architecting-distributed-video-blogs</span>
       </p>
       <div className="flex items-center gap-2">
       <Button variant="outline" size="sm" onClick={() => navigate("/")} className="text-xs">

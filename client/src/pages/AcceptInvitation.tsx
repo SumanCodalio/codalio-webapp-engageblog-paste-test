@@ -32,7 +32,7 @@ export default function AcceptInvitation() {
           <div className="mx-auto w-12 h-12 rounded-xl bg-primary text-primary-foreground flex items-center justify-center shadow-md shadow-primary/30">
             <Layers className="h-6 w-6" />
           </div>
-          <h1 className="text-2xl font-bold tracking-tight text-foreground">ContentReach</h1>
+          <h1 className="text-2xl font-bold tracking-tight text-foreground">engageblog testing deployment</h1>
           <div className="text-muted-foreground mt-4">
             {status === "loading" && <p>Accepting invitation...</p>}
             {status === "invalid" && <p>Invalid invitation link.</p>}

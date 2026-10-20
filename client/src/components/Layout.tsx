@@ -51,7 +51,7 @@ export default function Layout() {
     <Layers className="h-5 w-5" />
     </div>
     <div className="flex flex-col">
-    <span className="leading-tight text-foreground font-semibold">ContentReach</span>
+    <span className="leading-tight text-foreground font-semibold">engageblog testing deployment</span>
     <span className="text-[10px] text-muted-foreground font-normal uppercase tracking-wider">Blog & Video Suite</span>
     </div>
     </Link>
@@ -211,7 +211,7 @@ export default function Layout() {
     <div className="w-8 h-8 rounded-lg bg-primary text-primary-foreground flex items-center justify-center font-bold">
     CR
     </div>
-    <span className="font-bold text-foreground">ContentReach {orgSlug ? `(${orgSlug})` : ""}</span>
+    <span className="font-bold text-foreground">engageblog testing deployment {orgSlug ? `(${orgSlug})` : ""}</span>
     </div>
     </div>
     <div className="p-3 space-y-6">

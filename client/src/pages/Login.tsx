@@ -52,7 +52,7 @@ export default function Login() {
       <div className="mx-auto w-12 h-12 rounded-xl bg-primary text-primary-foreground flex items-center justify-center shadow-md shadow-primary/30">
       <Layers className="h-6 w-6" />
       </div>
-      <h1 className="text-2xl font-bold tracking-tight text-foreground">Sign In to ContentReach</h1>
+      <h1 className="text-2xl font-bold tracking-tight text-foreground">Sign In to engageblog testing deployment</h1>
       <p className="text-xs sm:text-sm text-muted-foreground">
       Enter your credentials to explore the publishing console.
       </p>
